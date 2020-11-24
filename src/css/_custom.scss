@@ -1,0 +1,734 @@
+
+   @import url(https://db.onlinewebfonts.com/c/5d584e944976c81ab816c6f34a530d43?family=IndustryW00-Black);
+   @import url(https://db.onlinewebfonts.com/c/9e8905c9ac3c5e775c39bd300203d834?family=IndustryW00-Demi);
+   @font-face {font-family: "IndustryW00-Black"; src: url("https://db.onlinewebfonts.com/t/5d584e944976c81ab816c6f34a530d43.eot"); src: url("https://db.onlinewebfonts.com/t/5d584e944976c81ab816c6f34a530d43.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/5d584e944976c81ab816c6f34a530d43.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/5d584e944976c81ab816c6f34a530d43.woff") format("woff"), url("https://db.onlinewebfonts.com/t/5d584e944976c81ab816c6f34a530d43.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/5d584e944976c81ab816c6f34a530d43.svg#IndustryW00-Black") format("svg"); }
+
+
+
+   @font-face {font-family: "IndustryW00-Demi"; src: url("https://db.onlinewebfonts.com/t/9e8905c9ac3c5e775c39bd300203d834.eot"); src: url("https://db.onlinewebfonts.com/t/9e8905c9ac3c5e775c39bd300203d834.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/9e8905c9ac3c5e775c39bd300203d834.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/9e8905c9ac3c5e775c39bd300203d834.woff") format("woff"), url("https://db.onlinewebfonts.com/t/9e8905c9ac3c5e775c39bd300203d834.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/9e8905c9ac3c5e775c39bd300203d834.svg#IndustryW00-Demi") format("svg"); }
+
+
+
+*{
+   font-family: "IndustryW00-Black"
+}
+
+
+html{
+    overflow-x: hidden;
+}
+body{
+    background: white;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+$breakpoint-pre-tablet: 992px;
+
+$breakpoint-tablet: 768px;
+
+
+
+
+$ltgrey: #cbd0d3;
+
+$bgwhite: #ffffff;
+$seafoam: #65cbb0;
+$dkblue: #191f2d;
+$coral: #ee9190;
+
+$grey: #5e636c;
+
+
+$trans: transparent;
+
+$txtwhite: #ffffff;
+$borderwhite: #ffffff;
+
+
+
+*{
+    font-family: "IndustryW00-Black" !important;
+    }
+    
+    p,.topline{
+      font-family: 'Roboto', sans-serif !important;
+      font-weight: 500;
+    
+    }
+
+
+
+.header-row{
+    padding: 30px 0 40px;
+}
+
+.text-center{
+    text-align: center;
+
+h2{
+    text-align: center;
+    width: 100%;
+}
+
+}
+
+    h4{
+        font-size: 2em;
+    }
+
+.text-center{
+    text-align: center;
+}
+
+.bgwhite{
+    background-color: $bgwhite
+}
+
+
+
+.lt-grey{
+background-color: $ltgrey;
+}
+
+.top-social{
+    height: 37px;
+    background: $bgwhite;
+    padding: 6px 0;
+    
+}
+
+
+.soc{
+
+    display: block;
+
+.soc-button{
+    width: 25px;
+    height: 25px;
+    background: $seafoam;
+    display: inline-block;
+    margin-right: 0;
+    text-align: center;
+
+    &.lg{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        margin-right: 5px;
+    }
+
+}
+
+}
+
+.nav{
+    background: $dkblue;
+    height: 64px;
+
+
+    li{
+        display: inline;
+        a{
+            color: $txtwhite;
+        }
+    }
+
+}
+
+
+.basket{
+    float: right;
+    background: $coral;
+    height: 64px;
+    
+    padding: 0 10px;
+    display: table;
+    a{
+        color: $dkblue;
+        display: table-cell;
+        vertical-align: middle;
+        font-family: "IndustryW00-Demi" !important;
+    }
+
+}
+
+
+.login{
+color: $txtwhite;
+    float: right;
+    height: 64px;
+padding: 0 15px;
+display: table;
+
+
+a{
+    color: $txtwhite;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "IndustryW00-Demi" !important;
+}
+}
+
+
+.logo-image{
+    height: 35px;
+}
+
+
+.relative{
+    position: relative;
+}
+
+.logo{
+    width: fit-content;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,46%);
+}
+
+
+.fh{
+    height: 70vh;
+    position: relative;
+}
+
+button{
+    box-shadow: none;
+    background: $bgwhite;
+
+    box-shadow: 0 0 black;
+    border: 0;
+    padding: 11px 30px 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+color: $dkblue;
+
+    &.stroke{
+        border: 4px solid green;
+        padding: 9px 12px 5px;
+        margin-top: 1em;
+
+    }
+
+
+    &.stroke-transparent{
+        border: 4px solid $seafoam;
+        padding: 9px 12px 5px;
+        margin-top: 1em;
+        background-color: $trans;
+        color: $txtwhite;
+    }
+
+
+
+    &.transparent-btn{
+        border: 4px solid $dkblue;
+        padding: 9px 12px 5px;
+        margin-top: 1em;
+        background-color: $trans;
+
+        &.white{
+            border: 4px solid $borderwhite;
+        }
+    }
+}
+
+
+
+.center-text-box{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+
+    h2{
+        font-size: 3em;
+        line-height: 1em;
+    }
+
+    p{
+        font-size: 1.125em;
+        line-height: 1.5em;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        width: 100%;
+    }
+
+
+
+}
+
+.text-block{
+    background: $bgwhite;
+    padding: 3em 0 2em;
+}
+
+
+.seafoam{
+    background-color: $seafoam
+}
+
+.seafoam-text{
+    color: $seafoam
+}
+
+.white-border-thick{
+    padding: 3em 0;
+    border: 30px solid $borderwhite;
+    box-sizing: border-box;
+}
+
+
+
+h2{
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.topline{
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+
+    margin-top: 1em;
+    text-transform: uppercase;
+
+
+
+    &.grey{
+        color: $grey;
+        margin-top: 1.6em;
+    }
+}
+
+
+h2.white,
+.white{
+    color: $txtwhite;
+}
+
+
+.bg-image{
+    background-image: url(http://lorempixel.com/400/200);
+    background-size: cover;
+}
+
+
+.pad-column{
+    margin-top: 9em;
+    margin-bottom: 9em;
+}
+
+.section-pad{
+    padding: 30px;
+}
+
+
+.product-image-landing{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.product-title{
+    margin-top: 0.9375em;
+    color: $dkblue;
+
+    font-size: 0.9375em;
+
+}
+
+
+
+.product-price{
+    color: $grey;
+    font-size: 0.9375em;
+
+}
+
+
+.product-variants{
+    font-size: .875em;
+    color: $grey;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mb-60{
+    margin-bottom: 60px;
+}
+
+
+.lg-quote{
+    font-size: 3.75em;
+line-height: 1.2em;
+    width: 80%;
+    margin: 0 auto 30px;
+
+    @media (max-width: $breakpoint-tablet) {
+        width: 100%;
+    }
+
+
+}
+
+
+.logo-green{
+
+width: 64px;
+height: 64px;
+margin: 0 auto 30px;
+}
+
+
+
+.review-header{
+text-transform: uppercase;
+font-family: 'Roboto', sans-serif !important;
+font-weight: 500;
+
+}
+.review-stars{
+    margin: .75em 0; 
+}
+
+.review-quote{
+    font-family: Roboto,sans-serif!important;
+    font-weight: 100;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    margin: .5em 0 .75em;
+}
+
+
+
+.review-reviewer, .review-item{
+    color: $dkblue;
+    font-size: 0.9375em;
+}
+
+
+.vert-pad-40{
+    padding: 40px 0;
+}
+
+
+footer{
+    background-color: $dkblue;
+    color: $txtwhite;
+
+
+    padding: 90px 0 50px 0;
+    position: relative;
+
+margin-top: 50px;
+
+}
+
+.back-to-top{
+    color: $dkblue;
+    // width: 60px;
+    // height: 20px;
+    background-color: $grey;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+padding: 10px 30px;
+
+
+line-height: 1.2;
+
+cursor: pointer;
+&:hover{
+    // background-color: $dkblue;
+}
+}
+
+
+
+.footer-p{
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 100;
+
+    a{
+        font-family: 'Roboto', sans-serif !important;
+        font-weight: 100;
+    }
+}
+
+
+footer input{
+display: block;
+width: 100%;
+padding: 5px;
+margin-bottom: 1em;
+}
+
+
+.forgot-p{
+    color: white;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 100;
+    font-size: .8em;
+    display: block;
+}
+
+
+
+footer button{
+    display: block;
+}
+
+
+.tm{
+    color: white;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 100;
+    font-size: .8em;
+    display: block;
+    text-align: center;
+    padding: 50px 0 30px;
+    
+}
+
+
+.relative-container{
+
+    height: 100%;
+    background: transparent;
+    position: relative;
+
+    .relative-container-content{
+
+
+        position: absolute;
+        bottom: 60px;
+    }
+
+}
+
+
+
+
+.square {
+    position: relative;
+    width: 100%;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+    
+    transition: .5s all ease;
+    &:hover{
+        opacity: 1;
+    }
+    
+    margin-bottom: 1em;
+
+  }
+
+  .content button{
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+
+
+
+.vertical {
+    position: relative;
+    width: 100%;
+}
+
+.vertical:after {
+    content: "";
+    display: block;
+    padding-bottom: 120%;
+}
+
+.content-vertical {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+    
+    transition: .5s all ease;
+    &:hover{
+        opacity: 1;
+    }
+    
+    margin-bottom: 1em;
+
+  }
+
+  .content-vertical button{
+    margin-top: 0;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+
+    // transform: translate(-50%,-50%);
+}
+
+
+.center-stroke-container{
+    position: relative;
+}
+
+.center-stroke{
+    position: absolute;
+    height:100%;
+    width: 2px;
+    background:white;
+    left: 50%;
+    margin-left: -1px;
+    color:transparent;
+
+
+    @media (max-width: $breakpoint-pre-tablet) {
+     display: none;
+    }
+
+
+
+}
+
+
+
+
+.footer-left-column{
+    width: 90%;
+}
+
+
+
+.footer-list li{
+    color: white;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 100;
+    
+
+a{
+    font-size: 0.8125em
+
+}
+
+}
+
+
+.mt-60{
+    margin-top: 60px;
+}
+
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+
+  .relative{
+      position: relative;
+  }
+
+
+  .vertical-center{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); 
+  }
+
+
+
+
+.left-right{
+
+
+    position: absolute;
+    width: 110px;
+    bottom: 0;
+
+
+
+}
+
+
+.left,.right{
+    width: 20px;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+.star{
+    width: 15px;
+    height: 15px;
+
+    
+    display: inline-block;
+}
+
+
+
+  .top-nav li a{
+    font-family: "IndustryW00-Demi" !important;
+}
+
+
+.top-nav-outer{
+    margin-top: 1.3em;
+}
+
+
+a{
+    &:hover{
+        color: $seafoam;
+        transition: .25s all ease;
+        text-decoration: none;
+    
+    }
+}
+
+.top-nav li{
+    margin-right: 10px;
+}
+.fw{
+    width: 100%;
+}
