@@ -14,6 +14,7 @@
 }
 
 
+
 html{
     overflow-x: hidden;
 }
@@ -148,6 +149,7 @@ background-color: $ltgrey;
     
     padding: 0 10px;
     display: table;
+    padding-right: 40px;
     a{
         color: $dkblue;
         display: table-cell;
@@ -191,6 +193,13 @@ a{
     left: 50%;
     top: 0;
     transform: translate(-50%,46%);
+}
+
+
+.white-logo{
+    width: 160px;
+    // margin-top: -15px;
+    margin-top: -4px;
 }
 
 
@@ -315,7 +324,7 @@ h2.white,
 
 
 .bg-image{
-    background-image: url(http://lorempixel.com/400/200);
+    background-image: url(https://lorempixel.com/400/200);
     background-size: cover;
 }
 
@@ -731,4 +740,23 @@ a{
 }
 .fw{
     width: 100%;
+}
+
+
+
+.seafoam-logo{
+    &::before {
+        background-image: get-icon( 'logo-seafoam' );
+    }
+    
+    &::after {
+        background-image: get-icon( 'logo-seafoam' );
+    }
+}
+
+
+
+.login-person{
+    width: 22px;
+    margin: 18px 0 18px 8px;
 }
