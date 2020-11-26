@@ -149,7 +149,7 @@ background-color: $ltgrey;
     
     padding: 0 10px;
     display: table;
-    padding-right: 40px;
+    // padding-right: 40px;
     a{
         color: $dkblue;
         display: table-cell;
@@ -338,6 +338,15 @@ h2.white,
     padding: 30px;
 }
 
+
+.section-pad-lg{
+    padding: 60px;
+}
+
+
+.section-pad-xl{
+    padding: 120px;
+}
 
 .product-image-landing{
     width: 100%;
@@ -655,6 +664,9 @@ a{
 }
 
 }
+.mt-30{
+    margin-top: 30px;
+}
 
 
 .mt-60{
@@ -760,3 +772,64 @@ a{
     width: 22px;
     margin: 18px 0 18px 8px;
 }
+
+
+.seafoam-logo-2{
+    transform: scale(1.1);
+    width: 64px;
+    margin-bottom: 20px;
+}
+
+
+.basket-icon{
+    width: 22px;
+}
+
+
+
+.top-stroke{
+    border-top: 3px solid #666666;
+}
+
+
+h2.demi{
+    // font-family: "IndustryW00-Demi" !important;
+}
+
+
+
+.breadcrumb-nav a{
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500;
+
+
+    color: green;
+}
+
+
+
+
+       
+
+
+  .filters a{
+color: #666666;
+font-family: 'Roboto', sans-serif !important;
+margin-right: 20px;
+  }
+
+
+
+  .options a{
+color: green;
+font-family: 'Roboto', sans-serif !important;
+margin-right: 20px;
+  }
+
+
+  .search-glass{
+      width: 20px;
+     
+      display: inline;
+      float: right;
+  }

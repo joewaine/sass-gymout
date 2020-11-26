@@ -243,35 +243,35 @@ color: transparent;
 
 
 
-.basket{
-    margin-bottom: 30px;
-position: relative;
-height: 64px;
-width: 64px;
-color: transparent;
+// .basket{
+//     margin-bottom: 30px;
+// position: relative;
+// height: 64px;
+// width: 64px;
+// color: transparent;
 
 
-padding-right: 30px;
+// // padding-right: 30px;
 
-	&::before,
-	&::after {
-		background: center / 22px 22px no-repeat;
-		// border-radius: 100em;
-		bottom: 0;
-		content: '';
-		position: absolute;
-		right: 10px;
-		top: 0;
-        width: 22px;
-        background-size: 110%;
-	}
+// 	&::before,
+// 	&::after {
+// 		background: center / 22px 22px no-repeat;
+// 		// border-radius: 100em;
+// 		bottom: 0;
+// 		content: '';
+// 		position: absolute;
+// 		right: 10px;
+// 		top: 0;
+//         width: 22px;
+//         background-size: 110%;
+// 	}
 
 
-    &::before {
-        background-image: get-icon( 'shopping-bag' );
-    }
+//     &::before {
+//         background-image: get-icon( 'shopping-bag' );
+//     }
     
-    &::after {
-        background-image: get-icon( 'shopping-bag' );
-    }
-}
+//     &::after {
+//         background-image: get-icon( 'shopping-bag' );
+//     }
+// }
