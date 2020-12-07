@@ -34,3 +34,12 @@ $(".back-to-top").on("click", function() {
 
 
 
+
+$('.top-nav a').click(function(e) {
+
+e.preventDefault()
+$('.drop-down-menu').toggleClass('visible')
+
+});
+
+
