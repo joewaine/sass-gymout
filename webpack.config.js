@@ -26,6 +26,24 @@ const CONFIG = {
           "removeComments": true
         }
       }),
+      new HtmlWebpackPlugin({
+        template: './src/merch.html',
+        filename: './merch.html',
+        minify: {
+          "collapseWhitespace": true,
+          "minifyCSS": true,
+          "removeComments": true
+        }
+      }),
+      new HtmlWebpackPlugin({
+        template: './src/product.html',
+        filename: './product.html',
+        minify: {
+          "collapseWhitespace": true,
+          "minifyCSS": true,
+          "removeComments": true
+        }
+      }),
       new HtmlReplaceWebpackPlugin([
         {
           pattern: '<script type="text/javascript" src="../build/app.js"></script>',
