@@ -328,7 +328,7 @@ h2.white,
 
 
 .bg-image{
-    background-image: url(https://lorempixel.com/400/200);
+    background-image: url(https://via.placeholder.com/400x200);
     background-size: cover;
 }
 
@@ -367,24 +367,30 @@ h2.white,
 }
 
 
-
+.product-variant-id,
 .product-price{
     color: $grey;
     font-size: 0.9375em;
 
 }
 
+.product-variant-id{
+    color: $dkblue;
+    font-family: IndustryW00-Demi!important;
+}
 
 .product-variants{
     font-size: .875em;
     color: $grey;
     font-family: 'Roboto', sans-serif !important;
 }
-
+.no-top-bot-pad.mb-30,
 .mb-30{
     margin-bottom: 30px;
 }
 
+
+.no-top-bot-pad.mb-60,
 .mb-60{
     margin-bottom: 60px;
 }
@@ -805,7 +811,7 @@ transition: .5s ease all;
 
 .login-person{
     width: 22px;
-    margin: 18px 0 18px 8px;
+    margin: 18px 8px 18px 0;
 }
 
 
@@ -1117,4 +1123,230 @@ margin-bottom: 10px;
 
 .pt-20{
     padding-top: 20px;
+}
+
+
+
+.product-item{
+
+
+
+.product-variants{
+    display: block;
+}
+
+.star-rating,
+.color-swatches{
+    display: none;
+}
+
+
+
+&:hover{
+    .product-variants{
+        display: none;
+    }
+    .star-rating,
+    .color-swatches{
+        display: block;
+    }
+    
+}
+
+}
+
+
+p{
+    font-size: .875em;
+    font-weight: 300;
+
+    line-height: 1.4em;
+    &.side-description{
+margin: 1em 0;
+    }
+
+
+&.no-top-bot-pad{
+    margin: 0em 0;
+}
+
+a{
+
+    color: $dkblue;
+    font-family: Roboto,sans-serif!important;
+    text-decoration: underline;
+}
+
+}
+
+
+
+select{
+    border: 2px solid #118342;
+    font-family: Roboto,sans-serif!important;
+    margin: 10px 0;
+    padding: 5px;
+    width: 90%;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+
+button.dk-button{
+    background-color: $dkblue;
+    color: white;
+    width: 90%;
+    text-align: center;
+}
+
+
+
+
+.italic{
+    font-family: Roboto,sans-serif!important;
+    font-size: .875em;
+    font-style: italic;
+    margin: .25em 0;
+}
+
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: transparent;
+    color: $dkblue;
+    cursor: pointer;
+    padding: 15px 0 5px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    text-transform: none;
+outline: none;
+border-bottom: 2px solid #cbd0d3;
+font-family: "IndustryW00-Demi" !important;
+&:active,
+&:hover,
+&:focus{
+    outline: none;   
+}
+      
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    // background-color: #ccc;
+  }
+  
+//   /* Style the accordion panel. Note: hidden by default */
+//   .panel {
+//     padding: 0 18px;
+//     background-color: white;
+//     display: none;
+//     overflow: hidden;
+//   }
+
+
+.panel {
+  padding: 0;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+
+
+
+
+
+.panel {
+    // padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    p{
+        margin: 1em 0;
+    }
+  }
+
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .accordionitem.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+
+
+.accordion-panel{
+    margin: 2em 0;
+}
+
+
+.scroll-modal{
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background: white;
+    display: none;
+
+    &.visible{
+        display: block;
+    }
+}
+
+
+
+
+.scroll-modal{
+    padding: 50px 0;
+
+
+    svg{
+        width: 50px;
+        height: 50px;
+    }
+
+    .fw{
+        margin-bottom: 40px;
+    }
+}
+
+
+.owl-container{
+    display: none;
+}
+
+.not-owl-container{
+    display: block;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .owl-container{
+        display: block;
+    }
+
+    .not-owl-container{
+        display: none;
+    }
+
+
+    .top-nav-outer{
+        display: none;
+    }
+
 }
